@@ -1,106 +1,205 @@
-<!doctype html>
-<html lang="en">
+export default function PortfolioWebsite() {
+  const projects = [
+    {
+      title: "Dashboard Analisis Data Penjualan",
+      category: "Data Analyst",
+      desc: "Menganalisis tren penjualan menggunakan Excel, SQL, dan visualisasi dashboard interaktif.",
+      tech: ["Excel", "SQL", "Power BI"],
+    },
+    {
+      title: "Redesign Aplikasi Mobile Cafe",
+      category: "UI/UX Design",
+      desc: "Membuat redesign tampilan aplikasi cafe agar lebih modern dan user friendly.",
+      tech: ["Figma", "Wireframe", "Prototype"],
+    },
+    {
+      title: "Website TOEIC Online",
+      category: "Web Development",
+      desc: "Website penyelenggaraan tes TOEIC berbasis Laravel dengan fitur login dan dashboard.",
+      tech: ["Laravel", "MySQL", "Tailwind"],
+    },
+  ];
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landing Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-</head>
+  const skills = [
+    "Data Analysis",
+    "UI/UX Design",
+    "Laravel",
+    "MySQL",
+    "Figma",
+    "Excel",
+    "Power BI",
+    "Tailwind CSS",
+    "HTML",
+    "CSS",
+    "JavaScript",
+  ];
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top shadow-lg border-bottom border-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="https://avatars.githubusercontent.com/u/74366958?v=4" alt="Avatar" class="rounded-circle mx-2 "
-          width="40px">
-        <b> athallahayudya </b>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <a class="nav-link" href="#">Home</a>
-          <a class="nav-link" href="#">Portofolio</a>
-          <a class="nav-link" href="#">About</a>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  return (
+    <div className="min-h-screen bg-[#F8FAFC] text-gray-800 font-sans">
+      {/* HERO SECTION */}
+      <section className="px-6 md:px-16 py-20 bg-gradient-to-br from-indigo-100 via-white to-pink-100">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <p className="text-indigo-600 font-semibold mb-3 tracking-wide">
+              PORTFOLIO WEBSITE
+            </p>
 
-  <br><br><br>
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+              Hi, I'm <span className="text-indigo-600">Athallah</span>
+            </h1>
 
+            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              Seorang mahasiswa yang tertarik pada bidang
+              <span className="font-semibold"> Data Analyst</span>,
+              <span className="font-semibold"> UI/UX Design</span>, dan
+              <span className="font-semibold"> Web Development</span>.
+              Saya suka membuat visualisasi data, desain antarmuka modern,
+              serta membangun website yang interaktif.
+            </p>
 
+            <div className="flex flex-wrap gap-4">
+              <button className="px-6 py-3 rounded-2xl bg-indigo-600 text-white font-medium shadow-lg hover:scale-105 transition">
+                View Projects
+              </button>
 
-  <div class="container">
-    <div class="row">
-      <div class="container col-lg-8 col-md-7 col-sm-12 mt-5">
-        <div class="card rounded-5 p-5 border border-dark shadow">
-          <h1>Hi! Welcome in My Pages,</h1>
-          <h4>Still with Athallah here!!</h4>
-          <hr>
-          <h5>I am a stundent at SMK Telkom Malang</h5>
-          <p>Who are studying android application development</p>
-          <div class="img-fluid mt-2">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-              <div>
+              <button className="px-6 py-3 rounded-2xl border border-gray-300 bg-white hover:bg-gray-100 transition">
+                Contact Me
+              </button>
+            </div>
+          </div>
 
-                <div class="carousel-inner rounded-4">
-                  <div class="carousel-item active">
-                    <img src="https://picsum.photos/500/300?random=1" class="d-block" style="width:100%">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://picsum.photos/500/300?random=2" class="d-block" style="width:100%">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://picsum.photos/500/300?random=3" class="d-block" style="width:100%">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://picsum.photos/500/300?random=4" class="d-block" style="width:100%">
-                  </div>
+          <div className="flex justify-center">
+            <div className="w-80 h-80 rounded-[40px] bg-white shadow-2xl flex items-center justify-center border border-gray-100">
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto rounded-full bg-indigo-100 flex items-center justify-center text-5xl font-bold text-indigo-600 mb-5">
+                  A
                 </div>
-
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-                </div>
+                <h2 className="text-2xl font-bold">Athallah</h2>
+                <p className="text-gray-500 mt-2">
+                  Data Analyst • UI/UX • Web Developer
+                </p>
               </div>
-
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="container col-lg-4 col-md-5 col-sm-12 mt-5">
-        <div class="card rounded-5 p-5 border border-dark shadow">
-          <img src="https://avatars.githubusercontent.com/u/74366958?v=4" class="img-fluid rounded-4" alt="Profile">
-          <div class="card-body">
-            <h4 class="card-title">Athallah Ayudya Paramesti</h4>
-            <hr>
-            <p class="card-text">Pelajar<br>18 Januari 2005<br>Malang</p>
-            <a href="#" class="card-link link-dark">About Me</a>
-            <a href="https://github.com/athallahayudya?tab=repositories" class="card-link link-dark">My little project</a>
+      {/* ABOUT */}
+      <section className="px-6 md:px-16 py-20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-10">About Me</h2>
+
+          <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 leading-relaxed text-gray-600 text-lg">
+            Saya memiliki ketertarikan pada analisis data, desain UI/UX,
+            serta pengembangan website. Saya senang mempelajari bagaimana
+            data dapat diubah menjadi insight yang bermanfaat dan bagaimana
+            desain dapat memberikan pengalaman terbaik bagi pengguna.
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* SKILLS */}
+      <section className="px-6 md:px-16 py-20 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-10">Skills</h2>
+
+          <div className="flex flex-wrap gap-4">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="px-5 py-3 rounded-2xl bg-indigo-50 text-indigo-700 font-medium border border-indigo-100 hover:scale-105 transition"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROJECTS */}
+      <section className="px-6 md:px-16 py-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-between mb-10 flex-wrap gap-4">
+            <h2 className="text-4xl font-bold">Projects</h2>
+
+            <div className="flex gap-3 flex-wrap">
+              <button className="px-4 py-2 rounded-xl bg-indigo-600 text-white">
+                All
+              </button>
+              <button className="px-4 py-2 rounded-xl bg-white border">
+                Data Analyst
+              </button>
+              <button className="px-4 py-2 rounded-xl bg-white border">
+                UI/UX
+              </button>
+              <button className="px-4 py-2 rounded-xl bg-white border">
+                Web Dev
+              </button>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:-translate-y-2 transition duration-300"
+              >
+                <div className="h-44 rounded-2xl bg-gradient-to-br from-indigo-100 to-pink-100 mb-6"></div>
+
+                <p className="text-sm text-indigo-600 font-semibold mb-2">
+                  {project.category}
+                </p>
+
+                <h3 className="text-2xl font-bold mb-3">
+                  {project.title}
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed mb-5">
+                  {project.desc}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((item, i) => (
+                    <span
+                      key={i}
+                      className="text-sm px-3 py-1 rounded-full bg-gray-100 text-gray-700"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="px-6 md:px-16 py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
+
+          <p className="text-lg text-indigo-100 leading-relaxed mb-8">
+            Tertarik bekerja sama atau ingin melihat project lainnya?
+            Hubungi saya melalui email atau media sosial.
+          </p>
+
+          <div className="flex justify-center gap-4 flex-wrap">
+            <button className="px-6 py-3 rounded-2xl bg-white text-indigo-700 font-semibold hover:scale-105 transition">
+              Email Me
+            </button>
+
+            <button className="px-6 py-3 rounded-2xl border border-white hover:bg-white hover:text-indigo-700 transition">
+              GitHub
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="py-8 text-center text-gray-500 text-sm bg-white border-t">
+        © 2026 Athallah Portfolio. All rights reserved.
+      </footer>
     </div>
-  </div>
-
-  <br><br><br>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+  );
+}
