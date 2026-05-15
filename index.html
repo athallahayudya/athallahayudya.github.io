@@ -1,205 +1,210 @@
-export default function PortfolioWebsite() {
-  const projects = [
-    {
-      title: "Dashboard Analisis Data Penjualan",
-      category: "Data Analyst",
-      desc: "Menganalisis tren penjualan menggunakan Excel, SQL, dan visualisasi dashboard interaktif.",
-      tech: ["Excel", "SQL", "Power BI"],
-    },
-    {
-      title: "Redesign Aplikasi Mobile Cafe",
-      category: "UI/UX Design",
-      desc: "Membuat redesign tampilan aplikasi cafe agar lebih modern dan user friendly.",
-      tech: ["Figma", "Wireframe", "Prototype"],
-    },
-    {
-      title: "Website TOEIC Online",
-      category: "Web Development",
-      desc: "Website penyelenggaraan tes TOEIC berbasis Laravel dengan fitur login dan dashboard.",
-      tech: ["Laravel", "MySQL", "Tailwind"],
-    },
-  ];
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Athallah</title>
 
-  const skills = [
-    "Data Analysis",
-    "UI/UX Design",
-    "Laravel",
-    "MySQL",
-    "Figma",
-    "Excel",
-    "Power BI",
-    "Tailwind CSS",
-    "HTML",
-    "CSS",
-    "JavaScript",
-  ];
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F8FAFC] text-gray-800 font-sans">
 
-  return (
-    <div className="min-h-screen bg-[#F8FAFC] text-gray-800 font-sans">
-      {/* HERO SECTION */}
-      <section className="px-6 md:px-16 py-20 bg-gradient-to-br from-indigo-100 via-white to-pink-100">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <p className="text-indigo-600 font-semibold mb-3 tracking-wide">
-              PORTFOLIO WEBSITE
+  <!-- HERO SECTION -->
+  <section class="px-6 md:px-16 py-20 bg-gradient-to-br from-indigo-100 via-white to-pink-100">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+      <div>
+        <p class="text-indigo-600 font-semibold mb-3 tracking-wide">
+          PORTFOLIO WEBSITE
+        </p>
+
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+          Hi, I'm <span class="text-indigo-600">Athallah</span>
+        </h1>
+
+        <p class="text-lg text-gray-600 leading-relaxed mb-8">
+          Seorang mahasiswa yang tertarik pada bidang
+          <span class="font-semibold"> Data Analyst</span>,
+          <span class="font-semibold"> UI/UX Design</span>, dan
+          <span class="font-semibold"> Web Development</span>.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <button class="px-6 py-3 rounded-2xl bg-indigo-600 text-white font-medium shadow-lg hover:scale-105 transition">
+            View Projects
+          </button>
+
+          <button class="px-6 py-3 rounded-2xl border border-gray-300 bg-white hover:bg-gray-100 transition">
+            Contact Me
+          </button>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="w-80 h-80 rounded-[40px] bg-white shadow-2xl flex items-center justify-center border border-gray-100">
+          <div class="text-center">
+            <div class="w-32 h-32 mx-auto rounded-full bg-indigo-100 flex items-center justify-center text-5xl font-bold text-indigo-600 mb-5">
+              A
+            </div>
+
+            <h2 class="text-2xl font-bold">Athallah</h2>
+
+            <p class="text-gray-500 mt-2">
+              Data Analyst • UI/UX • Web Developer
             </p>
-
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Hi, I'm <span className="text-indigo-600">Athallah</span>
-            </h1>
-
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Seorang mahasiswa yang tertarik pada bidang
-              <span className="font-semibold"> Data Analyst</span>,
-              <span className="font-semibold"> UI/UX Design</span>, dan
-              <span className="font-semibold"> Web Development</span>.
-              Saya suka membuat visualisasi data, desain antarmuka modern,
-              serta membangun website yang interaktif.
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 rounded-2xl bg-indigo-600 text-white font-medium shadow-lg hover:scale-105 transition">
-                View Projects
-              </button>
-
-              <button className="px-6 py-3 rounded-2xl border border-gray-300 bg-white hover:bg-gray-100 transition">
-                Contact Me
-              </button>
-            </div>
-          </div>
-
-          <div className="flex justify-center">
-            <div className="w-80 h-80 rounded-[40px] bg-white shadow-2xl flex items-center justify-center border border-gray-100">
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto rounded-full bg-indigo-100 flex items-center justify-center text-5xl font-bold text-indigo-600 mb-5">
-                  A
-                </div>
-                <h2 className="text-2xl font-bold">Athallah</h2>
-                <p className="text-gray-500 mt-2">
-                  Data Analyst • UI/UX • Web Developer
-                </p>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* ABOUT */}
-      <section className="px-6 md:px-16 py-20">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-10">About Me</h2>
+    </div>
+  </section>
 
-          <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 leading-relaxed text-gray-600 text-lg">
-            Saya memiliki ketertarikan pada analisis data, desain UI/UX,
-            serta pengembangan website. Saya senang mempelajari bagaimana
-            data dapat diubah menjadi insight yang bermanfaat dan bagaimana
-            desain dapat memberikan pengalaman terbaik bagi pengguna.
-          </div>
+
+  <!-- ABOUT -->
+  <section class="px-6 md:px-16 py-20">
+    <div class="max-w-6xl mx-auto">
+
+      <h2 class="text-4xl font-bold mb-10">About Me</h2>
+
+      <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 leading-relaxed text-gray-600 text-lg">
+        Saya memiliki ketertarikan pada analisis data, desain UI/UX,
+        serta pengembangan website.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section class="px-6 md:px-16 py-20 bg-white">
+    <div class="max-w-6xl mx-auto">
+
+      <h2 class="text-4xl font-bold mb-10">Skills</h2>
+
+      <div class="flex flex-wrap gap-4">
+        <div class="px-5 py-3 rounded-2xl bg-indigo-50 text-indigo-700 font-medium border border-indigo-100">
+          Data Analysis
         </div>
-      </section>
 
-      {/* SKILLS */}
-      <section className="px-6 md:px-16 py-20 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-10">Skills</h2>
-
-          <div className="flex flex-wrap gap-4">
-            {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="px-5 py-3 rounded-2xl bg-indigo-50 text-indigo-700 font-medium border border-indigo-100 hover:scale-105 transition"
-              >
-                {skill}
-              </div>
-            ))}
-          </div>
+        <div class="px-5 py-3 rounded-2xl bg-indigo-50 text-indigo-700 font-medium border border-indigo-100">
+          UI/UX Design
         </div>
-      </section>
 
-      {/* PROJECTS */}
-      <section className="px-6 md:px-16 py-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between mb-10 flex-wrap gap-4">
-            <h2 className="text-4xl font-bold">Projects</h2>
-
-            <div className="flex gap-3 flex-wrap">
-              <button className="px-4 py-2 rounded-xl bg-indigo-600 text-white">
-                All
-              </button>
-              <button className="px-4 py-2 rounded-xl bg-white border">
-                Data Analyst
-              </button>
-              <button className="px-4 py-2 rounded-xl bg-white border">
-                UI/UX
-              </button>
-              <button className="px-4 py-2 rounded-xl bg-white border">
-                Web Dev
-              </button>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:-translate-y-2 transition duration-300"
-              >
-                <div className="h-44 rounded-2xl bg-gradient-to-br from-indigo-100 to-pink-100 mb-6"></div>
-
-                <p className="text-sm text-indigo-600 font-semibold mb-2">
-                  {project.category}
-                </p>
-
-                <h3 className="text-2xl font-bold mb-3">
-                  {project.title}
-                </h3>
-
-                <p className="text-gray-600 leading-relaxed mb-5">
-                  {project.desc}
-                </p>
-
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((item, i) => (
-                    <span
-                      key={i}
-                      className="text-sm px-3 py-1 rounded-full bg-gray-100 text-gray-700"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+        <div class="px-5 py-3 rounded-2xl bg-indigo-50 text-indigo-700 font-medium border border-indigo-100">
+          Laravel
         </div>
-      </section>
 
-      {/* CONTACT */}
-      <section className="px-6 md:px-16 py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
+        <div class="px-5 py-3 rounded-2xl bg-indigo-50 text-indigo-700 font-medium border border-indigo-100">
+          Power BI
+        </div>
+      </div>
 
-          <p className="text-lg text-indigo-100 leading-relaxed mb-8">
-            Tertarik bekerja sama atau ingin melihat project lainnya?
-            Hubungi saya melalui email atau media sosial.
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section class="px-6 md:px-16 py-20">
+    <div class="max-w-6xl mx-auto">
+
+      <h2 class="text-4xl font-bold mb-10">Projects</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:-translate-y-2 transition duration-300">
+
+          <div class="h-44 rounded-2xl bg-gradient-to-br from-indigo-100 to-pink-100 mb-6"></div>
+
+          <p class="text-sm text-indigo-600 font-semibold mb-2">
+            Data Analyst
           </p>
 
-          <div className="flex justify-center gap-4 flex-wrap">
-            <button className="px-6 py-3 rounded-2xl bg-white text-indigo-700 font-semibold hover:scale-105 transition">
-              Email Me
-            </button>
+          <h3 class="text-2xl font-bold mb-3">
+            Dashboard Analisis Data
+          </h3>
 
-            <button className="px-6 py-3 rounded-2xl border border-white hover:bg-white hover:text-indigo-700 transition">
-              GitHub
-            </button>
-          </div>
+          <p class="text-gray-600 leading-relaxed mb-5">
+            Visualisasi data penjualan menggunakan Power BI.
+          </p>
+
         </div>
-      </section>
 
-      {/* FOOTER */}
-      <footer className="py-8 text-center text-gray-500 text-sm bg-white border-t">
-        © 2026 Athallah Portfolio. All rights reserved.
-      </footer>
+
+        <div class="bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:-translate-y-2 transition duration-300">
+
+          <div class="h-44 rounded-2xl bg-gradient-to-br from-indigo-100 to-pink-100 mb-6"></div>
+
+          <p class="text-sm text-indigo-600 font-semibold mb-2">
+            UI/UX Design
+          </p>
+
+          <h3 class="text-2xl font-bold mb-3">
+            Redesign Mobile App
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed mb-5">
+            Mendesain ulang tampilan aplikasi agar lebih modern.
+          </p>
+
+        </div>
+
+
+        <div class="bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:-translate-y-2 transition duration-300">
+
+          <div class="h-44 rounded-2xl bg-gradient-to-br from-indigo-100 to-pink-100 mb-6"></div>
+
+          <p class="text-sm text-indigo-600 font-semibold mb-2">
+            Web Development
+          </p>
+
+          <h3 class="text-2xl font-bold mb-3">
+            Website TOEIC Online
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed mb-5">
+            Website TOEIC berbasis Laravel dan MySQL.
+          </p>
+
+        </div>
+
+      </div>
+
     </div>
-  );
-}
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="px-6 md:px-16 py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+      <h2 class="text-4xl font-bold mb-6">Let's Work Together</h2>
+
+      <p class="text-lg text-indigo-100 leading-relaxed mb-8">
+        Hubungi saya melalui email atau GitHub.
+      </p>
+
+      <div class="flex justify-center gap-4 flex-wrap">
+
+        <button class="px-6 py-3 rounded-2xl bg-white text-indigo-700 font-semibold">
+          Email Me
+        </button>
+
+        <button class="px-6 py-3 rounded-2xl border border-white hover:bg-white hover:text-indigo-700 transition">
+          GitHub
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="py-8 text-center text-gray-500 text-sm bg-white border-t">
+    © 2026 Athallah Portfolio. All rights reserved.
+  </footer>
+
+</body>
+</html>
